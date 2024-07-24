@@ -1,10 +1,17 @@
-import express from 'express';
+import express, { json } from "express";
+import dotenv from "dotenv";
 
+import connectDB from "./config/db.js";
+
+dotenv.config();
+const port = process.env.PORT || 3001;
 const app = express();
-const port = process.env.PORT || 3000;
+app.use(json);
 
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
+connectDB();
+
+app.get("/", (req, res) => {
+  res.json({ ping: "Successful" });
 });
 
 app.listen(port, () => {
