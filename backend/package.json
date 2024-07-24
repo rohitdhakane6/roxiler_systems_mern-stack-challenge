@@ -1,7 +1,22 @@
 {
   "name": "backend",
-  "packageManager": "yarn@4.1.1",
+  "version": "1.0.0",
+  "description": "Backend for MERN Stack Coding Challenge",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "dev": "nodemon --exec babel-node src/index.js"
+  },
   "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.24.9",
+    "@babel/node": "^7.24.8",
+    "@babel/preset-env": "^7.24.8",
     "nodemon": "^3.1.4"
-  }
+  },
+  "packageManager": "yarn@4.1.1+sha512.ec40d0639bb307441b945d9467139cbb88d14394baac760b52eca038b330d16542d66fef61574271534ace5a200518dabf3b53a85f1f9e4bfa37141b538a9590"
 }
