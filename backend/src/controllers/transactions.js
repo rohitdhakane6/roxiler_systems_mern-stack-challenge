@@ -5,7 +5,7 @@ export const getTransactions = async (req, res) => {
     const { page = 1, perPage = 10, search = "", month = 3 } = req.query;
     const pageNumber = parseInt(page);
     const itemsPerPage = parseInt(perPage);
-    const selectedMonth = parseFloat(month);
+    const selectedMonth = parseInt(month);
     const searchNumber = parseFloat(search);
     const isNumber = !isNaN(searchNumber) && isFinite(searchNumber);
     const isMonthValid = !isNaN(selectedMonth) && selectedMonth >= 1 && selectedMonth <= 12;

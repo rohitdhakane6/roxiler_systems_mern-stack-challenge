@@ -7,9 +7,9 @@ import { getPieChart } from "../controllers/piechart.js";
 const router = Router();
 
 
-router.get("/getTransactions", getTransactions);
-router.get("/getStatistics", getStatistics);
-router.get("/getBarChart",getBarChart);
-router.get("/get",getPieChart)
+router.get("/transactions", getTransactions);
+router.get("/statistics", getStatistics);
+router.get("/barchart",getBarChart);
+router.get("/paichart",getPieChart)
 
 export default router;

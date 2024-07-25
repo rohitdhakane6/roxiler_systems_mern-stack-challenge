@@ -9,7 +9,7 @@ const port = process.env.PORT;
 const app = express();
 app.use(json());
 app.use(cors())
-app.use(router)
+app.use('/api',router)
 
 connectDB();
 
