@@ -16,8 +16,6 @@ const Charts = ({ selectedMonth }) => {
       const response = await axios.get(
         `/api/barchart?month=${selectedMonth}`
       );
-      console.log(response);
-
       setPriceRanges(response.data || []);
       console.log(priceRanges);
     } catch (error) {
@@ -29,7 +27,7 @@ const Charts = ({ selectedMonth }) => {
     <div className="bg-gray-800 text-white p-4 rounded mb-4">
       <h2 className="text-xl font-bold mb-2">Price Range Distribution</h2>
       <BarChart
-        width={600}
+        width={1000}
         height={300}
         data={priceRanges}
         margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
