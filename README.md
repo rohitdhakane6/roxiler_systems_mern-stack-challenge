@@ -1,5 +1,3 @@
-
-```markdown
 # MERN Stack Coding Challenge
 ## Prerequisites
 - Node.js (v14 or higher)
