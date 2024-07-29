@@ -8,7 +8,6 @@
    ```
    cd backend
    ```
-
 2. Install dependencies:
    ```
    yarn install
@@ -20,33 +19,23 @@
    ```
 4. Seeding Data
 
-
 ```
 yarn run seed
 ```
-
 5.Run the server:
-
    ```
    yarn start
    ```
-
 ## Frontend Setup
-
 1. Navigate to the frontend directory:
-
-   ```sh
+   ```
    cd frontend
    ```
-
 2. Install dependencies:
-
    ```
    yarn install
    ```
-
 3. Run the frontend application:
-
    ```
    yarn start
    ```
